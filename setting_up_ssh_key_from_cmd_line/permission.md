@@ -15,7 +15,7 @@ Please make sure you have the correct access rights
 and the repository exists.
 ```
 
-Getting this error suggests that you have not yet linked your local git with your GitHub account via [ssh]. 
+Getting this error suggests that you have not yet linked your local git with your GitHub account via [ssh](https://en.wikipedia.org/wiki/Secure_Shell).
 This tutorial will show you how to fix this problem and explain what each command is doing.
 
 ## Checking Current Status
@@ -30,6 +30,8 @@ ls -a ~/.ssh
 If nothing pops up, it means that you have yet to create a key that links your local computer to any remote locations via ssh.
 If you do see something, then there is probably another problem!
 
+## Generate Key 
+
 Assuming nothing shows up, the first thing you need to do is to generate an ssh key.
 You can run this with the following command.
 
@@ -37,6 +39,7 @@ You can run this with the following command.
 ssh-keygen -t rsa
 
 ```
+You can just press ``<RETURN>`` a few times after running this command, there is no need to set up a separate file or passcode.
 
 This will create a key that you will use to link your local computer to some sort of remote location.
 Note that this makes a PUBLIC and a PRIVATE key.
@@ -51,14 +54,17 @@ pbcopy < ~/.ssh/id_rsa.pub
 This is basically opening, highlighting the contents of ``id_rsa.pub`` and then copying the file contents to your clipboard in one fell swoop at command line.
 With this now in our clipboard, we then go to Github to finish our linking
 
+## Linking with Github
+
 Next, we navigate to [Github.com](www.github.com) and need to first go to Settings, then click the side panel that is SSH and GPG Keys.
 From here, click the Green SSH key.
 The following screenshots can direct your clicking!
 
-* Github 
-* Settings
-* SSH and GPGP
-* Green SSH
+![](img/ssh1.png)
+![](img/ssh2.png)
+![](img/ssh3.png)
+![](img/ssh4.png)
+
 
 From this screen, you then want to right click and paste the contents of your clipboard to this text field.
 You can also give this a title so you can keep track of your keys and what local computers that belongs to.
@@ -70,11 +76,5 @@ ssh -t git@github.com
 ```
 
 which will confirm that your local computer can now communiate with your GitHub account.
-
-
-
-
-
- 
 
 
