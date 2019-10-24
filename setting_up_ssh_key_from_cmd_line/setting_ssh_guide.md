@@ -75,6 +75,6 @@ Once you then save this, you can then test that it works by running
 ssh -t git@github.com
 ```
 
-which will confirm that your local computer can now communiate with your GitHub account.
+which will confirm that your local computer can now communicate with your GitHub account.
 
 
