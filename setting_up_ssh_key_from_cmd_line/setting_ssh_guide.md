@@ -27,32 +27,44 @@ You can run this with:
 ls -a ~/.ssh
 ``` 
 
-If nothing pops up, it means that you have yet to create a key that links your local computer to any remote locations via ssh.
-If you do see something, then there is probably another problem!
+Confirm that your directory structure is as follows:
+```bash
+.ssh
+├── id_rsa
+├── id_rsa.pub
+└── known_hosts
+```
+
+If the above isn't true (where `id_rsa.pub` is your _public key_ and `id_rsa` is your _private key_), it means that you have yet to create a keypair to link your local computer to any remote locations via ssh.
+If you do have the above or something similar, then there is probably another problem!
 
 ## Generate Key 
 
 Assuming nothing shows up, the first thing you need to do is to generate an ssh key.
 You can run this with the following command.
 
-```
+```bash
 ssh-keygen -t rsa
 
 ```
-You can just press ``<RETURN>`` a few times after running this command, there is no need to set up a separate file or passcode.
+
+You can just press ``<RETURN>`` when prompted to accept the defaults; there is no need (for the moment) to set up a specific filename or passcode.
 
 This will create a key that you will use to link your local computer to some sort of remote location.
 Note that this makes a PUBLIC and a PRIVATE key.
-You never want to give out your PRIVATE key, only in your PUBLIC key.
+You *never* want to give out your PRIVATE key, only your PUBLIC key.
 
 With our key generated with the command above, we can now copy the contents of ``id_rsa.pub`` to our clipboard with the command:
 
-```
+```bash
 pbcopy < ~/.ssh/id_rsa.pub
 ```
 
 This is basically opening, highlighting the contents of ``id_rsa.pub`` and then copying the file contents to your clipboard in one fell swoop at command line.
 With this now in our clipboard, we then go to Github to finish our linking
+
+Type in `man ssh-keygen` to learn more about the ssh-keygen tool.
+Type in `man pbcopy` to learn more about the ssh-keygen tool.
 
 ## Linking with Github
 
@@ -71,10 +83,15 @@ You can also give this a title so you can keep track of your keys and what local
 
 Once you then save this, you can then test that it works by running
 
-```
+```bash
 ssh -t git@github.com
 ```
 
-which will confirm that your local computer can now communicate with your GitHub account.
+Accept the prompt to add a new key to your known hosts by pressing `<RETURN>`.
+The above will confirm that your local computer can now communicate with your GitHub account by saying something like the following:
+
+```bash
+Hi <your GitHub username>! You've successfully authenticated, but GitHub does not provide shell access.
+```
 
 
