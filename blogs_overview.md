@@ -50,21 +50,27 @@ After your walk through, the last thing you want to do is wrap up what you did a
 
 Remember that the “point” of this blog is to show off your ability to convey technical information to a non-technical audience and why that matters. Through your writing, you want to be able to establish credibility as both an eloquent speaker, able of distilling complex information, as well as someone who is technically proficient in what you do. This of course is a big ask. But we are here to push you to be the best version of yourself that we can. 
 
-Topic: How to Choose between Nested Models
+## Topic: How to Choose between Nested Models
 
-Introduction: How do we know what model to choose?
+*Introduction*: How do we know what model to choose?
 There are tons of models in data science
 Sometimes too many!
 Without grounding in some theory, we run the risk of picking the wrong model and should rely on others to inform our choices?
-Operationalization: In world of data science we have some ways to quantify
+
+*Operationalization*: In world of data science we have some ways to quantify
 All common problems have way to explore this! 
 There are tons of ways of thinking about this, but going to focus on three here and talk about their advantages and drawbacks
-Here going to do mean square error, bayesian information criterion, log likelihood comparison 
-Analysis: I will explain three model comparison metrics
-MSE: Mean Square error. What is it? Why is it good, why is it bad?
-BIC: Same as A
-Log Likelihood: Same as A
-Insight: 
+Here going to do mean square error, bayesian information criterion, log likelihood comparison
+
+*Analysis*: I will explain three model comparison metrics
+
+*MSE*: Mean Square error. What is it? Why is it good, why is it bad?
+
+*BIC*: Same as A
+
+*Log Likelihood*: Same as A
+
+*Insight*: 
 All problems are different and tools help us decide
 Given what we learned we want to use BIC for xyz
 Or might us MSE for xyz (but look out bc doesn’t obey statistical distribution!) 
