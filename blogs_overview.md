@@ -33,10 +33,10 @@ Since writing is hard, below we offer a boilerplate template that you can follow
 
 In general, we find the following structure of a blog post or even presentation very effective. 
 
-Introduction: What is the domain specific question?
-Data Science Operationalisation: How and why can tools from data science help answer the question you initially asked?
-Data Science Analysis: This is the part where you show off your new toy.
-Domain specific insight: What insights do you now have access to now that you have completed your analysis? What does this matter?
+*Introduction*: What is the domain specific question?
+*Data Science Operationalisation*: How and why can tools from data science help answer the question you initially asked?
+*Data Science Analysis*: This is the part where you show off your new toy.
+*Domain specific insight*: What insights do you now have access to now that you have completed your analysis? What does this matter?
 
 Here are a few notes on each of the four structures.
 
