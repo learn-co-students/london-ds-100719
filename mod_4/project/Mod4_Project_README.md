@@ -13,9 +13,9 @@ In this document, we'll review all the guidelines and specifications for the fin
 
 ### Final Project Summary
 
-Another module down--you're absolutely crushing it! For this project, you'll get to flex your **Regression** muscles!
+Another module down--you're absolutely crushing it! For this project, you'll get to flex your **Regression / Time series** muscles!
 
-For this module's final project, we're going to put your new found **Regression** skills to the test.
+For this module's final project, we're going to put your new found **Regression / Time series** skills to the test.
 
 ### The Project
 
@@ -30,13 +30,14 @@ For example, if you were given a data set of housing price data for a given city
 
 ## The Deliverables
 
-The goal of this project is to have you complete a very common real-world task in regard to Regression Modeling. However, real world problems often come with a significant degree of ambiguity, which requires you to use your knowledge of statistics and data science to think critically about and answer.
+The goal of this project is to have you complete a very common real-world task in regard to Regression Modeling / Time series forecasting. However, real world problems often come with a significant degree of ambiguity, which requires you to use your knowledge of statistics and data science to think critically about and answer.
 
 In short, to pass this project, demonstrating the quality and thoughtfulness of your **overall recommendation** is at least as important as successfully building your models!
 
 In order to successfully complete this project, you must have:
 
-* A dataset that is **not overly used** online in data science examples. (Due end of Day1 - Friday)
+* A dataset that is **not overly used** online in data science examples.  (Due end of Day1 - Friday)
+* In the case you decide to choose a time series problem. We expect you to work at a level of granularity / frequency of the data **Daily or more frequent**. The data should also be displaying non-zero AR, I and MA components as well as seasonality (although the seasonal AR, I and MA can be non-zero)
 
 * A well-documented technical **_Jupyter Notebook_** explaining the rational and decisions of your project.
 * Well organized code in modularized .py files.
@@ -53,7 +54,7 @@ In order to successfully complete this project, you must have:
 ### Jupyter Notebook Must-Haves
 
 1. You must source & clean your data.  All boring stuff should be pushed to a .py file that is imported.  A single data set (albeit possibly from multiple sources) should be able to support all of the following requirements.
-2. Focus on regression, compare different models and compare their performances. Be sure that you include justifications of these decisions in your technical notebook.
+2. Focus on Regression / Time series, compare different models and compare their performances. Be sure that you include justifications of these decisions in your technical notebook.
 3. Validation is critical
 4. Visualizations to support each of your models built.
 
@@ -76,7 +77,7 @@ The notebook should be well organized, easy to follow, and code is modularized a
 
 #### Visualizations
 
-Regression is an area of data science that lend themselves well to intuitive data visualizations. **_Any findings worth mentioning in this problem are probably also worth visualizing_**. Your notebook should make use of data visualizations as appropriate to make your findings obvious to any readers.
+Regression / Time series is an area of data science that lend themselves well to intuitive data visualizations. **_Any findings worth mentioning in this problem are probably also worth visualizing_**. Your notebook should make use of data visualizations as appropriate to make your findings obvious to any readers.
 
 Also, remember that if a visualization is worth creating, then it's also worth taking the extra few minutes to make sure that it is easily understandable and well-formatted. When creating visualizations, make sure that they have:
 
