@@ -6,12 +6,9 @@
 
 In this lesson, we'll review all the guidelines and specifications for the final project for Module 5.
 
+Wherever we don't specify something you can fall back on the Mod4_Project specifications.
 
-## Objectives
-
-* Understand all required aspects of the Final Project for Module 5
-* Understand all required deliverables
-* Understand what constitutes a successful project
+You will be able to book a feedback session for your team's project before the final delivery of your presentation where we will focus on a particular area you would like support with.
 
 ## Final Project Summary
 
@@ -30,8 +27,6 @@ Model comparison and human reasoning are expected.
 
 We will be working with the **Credit card Default UCI Dataset** trying to predict whether someone won't pay their credit card debt the following month.
 Find the documentation and data [here](https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients).
-
-
 
 ## The Deliverables
 
@@ -52,13 +47,14 @@ For this project, your Jupyter Notebook should meet the following specifications
 **_Organization/Code Cleanliness_**
 
 * The notebook should be well organized, easy to follow, and code is commented where appropriate.  
-    * Level Up: The notebook contains well-formatted, professional looking markdown cells explaining any substantial code. All functions have docstrings that act as professional-quality documentation.  
+    * Level Up: The notebook contains well-formatted, professional looking markdown cells explaining any substantial code. All functions have docstrings that act as professional-quality documentation. Functions live in properly named .py files
 * The notebook is written to technical audiences with a way to both understand your approach and reproduce your results. The target audience for this deliverable is other data scientists looking to validate your findings.  
 
 **_Process, Methodology, and Findings_**
 
 * Your notebook should contain a clear record of your process and methodology for exploring and preprocessing your data, building and tuning a model, and interpreting your results.
 * We recommend you use the OSEMN process to help organize your thoughts and stay on track.
+* Don't forget to add a summary of this to your README.dm
 
 ## Grading Rubric
 
